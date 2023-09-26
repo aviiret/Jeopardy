@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc1pf07eaya1f"]
+
+[ext_resource type="Texture2D" uid="uid://djhhmwrjwrgu2" path="res://Images/jeopardy_logo.jpg" id="1_yh08c"]
+[ext_resource type="Theme" uid="uid://bf8pq1xw4nb8a" path="res://DefaultTheme.tres" id="2_nu4bg"]
+[ext_resource type="Script" path="res://Button.gd" id="3_ggkvi"]
+
+[node name="Selection" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_yh08c")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme = ExtResource("2_nu4bg")
+
+[node name="Button" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 199.0
+offset_right = 266.0
+offset_bottom = 230.0
+scale = Vector2(8.99344, 7.36708)
+text = "200"
+script = ExtResource("3_ggkvi")

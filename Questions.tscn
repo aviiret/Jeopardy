@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://88c7eoitfveg"]
+
+[ext_resource type="Texture2D" uid="uid://djhhmwrjwrgu2" path="res://Images/jeopardy_logo.jpg" id="1_d1kn3"]
+
+[node name="Questions" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_d1kn3")
